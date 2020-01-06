@@ -11,9 +11,9 @@ body {
 }
 
 .header {
-  background: #fff;
-  -webkit-box-shadow: 2px 2px 8px 0 #cecbcb;
-          box-shadow: 2px 2px 8px 0 #cecbcb;
+  background: #5eb1bf;
+  -webkit-box-shadow: 2px 2px 8px 0 #82c3ce;
+          box-shadow: 2px 2px 8px 0 #82c3ce;
   display: -ms-grid;
   display: grid;
   height: 70px;
@@ -24,7 +24,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .header__nav__logo {
@@ -33,6 +34,7 @@ body {
           justify-content: flex-start;
   -ms-flex-item-align: center;
       align-self: center;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,8 +59,8 @@ body {
           align-items: center;
   background: #fff;
   border-radius: 6px;
-  -webkit-box-shadow: 2px 3px 10px 0 #b6b6b6;
-          box-shadow: 2px 3px 10px 0 #b6b6b6;
+  -webkit-box-shadow: 1px 3px 10px 0 rgba(131, 130, 130, 0.5);
+          box-shadow: 1px 3px 10px 0 rgba(131, 130, 130, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,5 +121,57 @@ body {
   color: #5eb1bf;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.pagnition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px  auto;
+  width: 90%;
+}
+
+.pagnition__numbers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagnition__numbers li {
+  display: inline-block;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 5px 0 rgba(131, 130, 130, 0.5);
+          box-shadow: 1px 2px 5px 0 rgba(131, 130, 130, 0.5);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.pagination--btn {
+  background: #fff;
+  border: none;
+  -webkit-box-shadow: 1px 3px 10px 0 rgba(131, 130, 130, 0.5);
+          box-shadow: 1px 3px 10px 0 rgba(131, 130, 130, 0.5);
+  cursor: pointer;
+  margin-right: 13px;
+  outline: none;
+  padding: 10px 12px;
+}
+
+.pagination--btn:last-child {
+  margin-right: 0;
+  margin-left: 13px;
+}
+
+.pagination--btn:disabled {
+  background: #d6d6d6;
+  border: 1px solid #d6d6d6;
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,8 +15,8 @@ body {
 }
 
 .header {
-  background: $white;
-  box-shadow: 2px 2px 8px 0 rgb(206, 203, 203);
+  background: $blue;
+  box-shadow: 2px 2px 8px 0 lighten($color: $blue, $amount: 10);
   display: grid;
   height: 70px;
   width: 100%;
@@ -24,13 +24,15 @@ body {
 
 .header__nav {
     display: flex;
-    padding-left: 15px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 
 .header__nav__logo {
     justify-content: flex-start;
     align-self: center;
+    color: $white;
     display: flex;
     font-size: 18px;
     font-weight: 550;
@@ -51,7 +53,7 @@ body {
   align-items: center;
   background: $white;
   border-radius: 6px;
-  box-shadow: 2px 3px 10px 0 rgb(182, 182, 182);
+  box-shadow: 1px 3px 10px 0 rgba(131, 130, 130, 0.5);
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -103,4 +105,50 @@ body {
     border: 2px solid $dark-blue;
     color: $blue;
     transition: all 0.4s ease;
+}
+
+
+.pagnition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px  auto;
+    width: 90%;
+}
+
+.pagnition__numbers {
+    //display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagnition__numbers li{
+    display: inline-block;
+    background-color: $white;
+    box-shadow: 1px 2px 5px 0 rgba(131, 130, 130, 0.5);
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+.pagination--btn {
+    background: $white;
+    border: none;
+    box-shadow: 1px 3px 10px 0 rgba(131, 130, 130, 0.5);
+    cursor: pointer;
+    margin-right: 13px;
+    outline: none;
+    padding: 10px 12px;
+}
+
+.pagination--btn:last-child {
+    margin-right: 0;
+    margin-left: 13px;
+}
+
+.pagination--btn:disabled {
+    background: rgb(214, 214, 214);
+    border: 1px solid rgb(214, 214, 214);
+    cursor: not-allowed;
 }
